@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 
-// *! everything in the public folder will use an absolute 
+// *! everything in the public folder will use an absolute
 // *! path which is why you can use /assets
 app.use(express.static("public"));
 // We need to use sessions to keep track of our user's login status
@@ -34,7 +34,7 @@ app.use(passport.session());
 
 app.use(routes);
 // Syncing our database and logging a message to the user upon success
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {
     console.log(
       "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
