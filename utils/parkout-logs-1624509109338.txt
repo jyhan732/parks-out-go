@@ -1,0 +1,222 @@
+2021-06-24T01:48:12.516787+00:00 app[web.1]: npm ERR! 
+2021-06-24T01:48:12.516853+00:00 app[web.1]: npm ERR! Failed at the parks-out@1.0.0 start script.
+2021-06-24T01:48:12.516924+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2021-06-24T01:48:12.522135+00:00 app[web.1]: 
+2021-06-24T01:48:12.522290+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2021-06-24T01:48:12.522365+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2021-06-24T01_48_12_517Z-debug.log
+2021-06-24T01:48:12.600896+00:00 heroku[web.1]: Process exited with status 1
+2021-06-24T01:48:12.745492+00:00 heroku[web.1]: State changed from starting to crashed
+2021-06-24T02:29:52.033499+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=parkout.herokuapp.com request_id=bb59bf63-a7e5-4e63-94d9-06b54a99a349 fwd="174.57.106.177" dyno= connect= service= status=503 bytes= protocol=https
+2021-06-24T02:29:52.149237+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=parkout.herokuapp.com request_id=24e28851-a58b-4bb4-b8fe-7df6e65a011d fwd="174.57.106.177" dyno= connect= service= status=503 bytes= protocol=https
+2021-06-24T02:48:27.000000+00:00 app[api]: Build started by user sr@saibhreas.com
+2021-06-24T02:48:44.049473+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=parkout.herokuapp.com request_id=4550b03b-8b72-465e-a02b-587ed2b8b90c fwd="174.57.106.177" dyno= connect= service= status=503 bytes= protocol=https
+2021-06-24T02:48:44.166249+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=parkout.herokuapp.com request_id=a23c3c13-aa45-4bec-820d-b720c45a9ea5 fwd="174.57.106.177" dyno= connect= service= status=503 bytes= protocol=https
+2021-06-24T02:48:47.256312+00:00 app[api]: Deploy a1f9500f by user sr@saibhreas.com
+2021-06-24T02:48:47.256312+00:00 app[api]: Release v8 created by user sr@saibhreas.com
+2021-06-24T02:48:47.881085+00:00 heroku[web.1]: State changed from crashed to starting
+2021-06-24T02:48:48.000000+00:00 app[api]: Build succeeded
+2021-06-24T02:48:51.816994+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-06-24T02:48:55.009023+00:00 app[web.1]: 
+2021-06-24T02:48:55.009044+00:00 app[web.1]: > parks-out@1.0.0 start /app
+2021-06-24T02:48:55.009045+00:00 app[web.1]: > node server.js
+2021-06-24T02:48:55.009045+00:00 app[web.1]: 
+2021-06-24T02:48:55.815588+00:00 app[web.1]: internal/modules/cjs/loader.js:905
+2021-06-24T02:48:55.815605+00:00 app[web.1]:   throw err;
+2021-06-24T02:48:55.815605+00:00 app[web.1]:   ^
+2021-06-24T02:48:55.815606+00:00 app[web.1]: 
+2021-06-24T02:48:55.815607+00:00 app[web.1]: Error: Cannot find module './user'
+2021-06-24T02:48:55.815607+00:00 app[web.1]: Require stack:
+2021-06-24T02:48:55.815608+00:00 app[web.1]: - /app/models/index.js
+2021-06-24T02:48:55.815608+00:00 app[web.1]: - /app/controller/api/v1/userAuth.js
+2021-06-24T02:48:55.815609+00:00 app[web.1]: - /app/controller/api/v1/index.js
+2021-06-24T02:48:55.815609+00:00 app[web.1]: - /app/controller/api/index.js
+2021-06-24T02:48:55.815609+00:00 app[web.1]: - /app/controller/index.js
+2021-06-24T02:48:55.815610+00:00 app[web.1]: - /app/server.js
+2021-06-24T02:48:55.815610+00:00 app[web.1]:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+2021-06-24T02:48:55.815611+00:00 app[web.1]:     at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+2021-06-24T02:48:55.815611+00:00 app[web.1]:     at Module.require (internal/modules/cjs/loader.js:974:19)
+2021-06-24T02:48:55.815612+00:00 app[web.1]:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-06-24T02:48:55.815612+00:00 app[web.1]:     at Object.<anonymous> (/app/models/index.js:1:14)
+2021-06-24T02:48:55.815613+00:00 app[web.1]:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-06-24T02:48:55.815613+00:00 app[web.1]:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-06-24T02:48:55.815614+00:00 app[web.1]:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-06-24T02:48:55.815614+00:00 app[web.1]:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-06-24T02:48:55.815615+00:00 app[web.1]:     at Module.require (internal/modules/cjs/loader.js:974:19) {
+2021-06-24T02:48:55.815615+00:00 app[web.1]:   code: 'MODULE_NOT_FOUND',
+2021-06-24T02:48:55.815616+00:00 app[web.1]:   requireStack: [
+2021-06-24T02:48:55.815616+00:00 app[web.1]:     '/app/models/index.js',
+2021-06-24T02:48:55.815616+00:00 app[web.1]:     '/app/controller/api/v1/userAuth.js',
+2021-06-24T02:48:55.815617+00:00 app[web.1]:     '/app/controller/api/v1/index.js',
+2021-06-24T02:48:55.815617+00:00 app[web.1]:     '/app/controller/api/index.js',
+2021-06-24T02:48:55.815617+00:00 app[web.1]:     '/app/controller/index.js',
+2021-06-24T02:48:55.815618+00:00 app[web.1]:     '/app/server.js'
+2021-06-24T02:48:55.815618+00:00 app[web.1]:   ]
+2021-06-24T02:48:55.815618+00:00 app[web.1]: }
+2021-06-24T02:48:55.832157+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2021-06-24T02:48:55.832672+00:00 app[web.1]: npm ERR! errno 1
+2021-06-24T02:48:55.842618+00:00 app[web.1]: npm ERR! parks-out@1.0.0 start: `node server.js`
+2021-06-24T02:48:55.842833+00:00 app[web.1]: npm ERR! Exit status 1
+2021-06-24T02:48:55.843076+00:00 app[web.1]: npm ERR! 
+2021-06-24T02:48:55.843234+00:00 app[web.1]: npm ERR! Failed at the parks-out@1.0.0 start script.
+2021-06-24T02:48:55.843399+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2021-06-24T02:48:55.852611+00:00 app[web.1]: 
+2021-06-24T02:48:55.853467+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2021-06-24T02:48:55.853616+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2021-06-24T02_48_55_844Z-debug.log
+2021-06-24T02:48:55.923634+00:00 heroku[web.1]: Process exited with status 1
+2021-06-24T02:48:56.042117+00:00 heroku[web.1]: State changed from starting to crashed
+2021-06-24T02:48:56.047486+00:00 heroku[web.1]: State changed from crashed to starting
+2021-06-24T02:48:59.452937+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-06-24T02:49:02.531982+00:00 app[web.1]: 
+2021-06-24T02:49:02.532010+00:00 app[web.1]: > parks-out@1.0.0 start /app
+2021-06-24T02:49:02.532011+00:00 app[web.1]: > node server.js
+2021-06-24T02:49:02.532011+00:00 app[web.1]: 
+2021-06-24T02:49:03.511233+00:00 app[web.1]: internal/modules/cjs/loader.js:905
+2021-06-24T02:49:03.511305+00:00 app[web.1]:   throw err;
+2021-06-24T02:49:03.511306+00:00 app[web.1]:   ^
+2021-06-24T02:49:03.511306+00:00 app[web.1]: 
+2021-06-24T02:49:03.511307+00:00 app[web.1]: Error: Cannot find module './user'
+2021-06-24T02:49:03.511307+00:00 app[web.1]: Require stack:
+2021-06-24T02:49:03.511308+00:00 app[web.1]: - /app/models/index.js
+2021-06-24T02:49:03.511308+00:00 app[web.1]: - /app/controller/api/v1/userAuth.js
+2021-06-24T02:49:03.511309+00:00 app[web.1]: - /app/controller/api/v1/index.js
+2021-06-24T02:49:03.511309+00:00 app[web.1]: - /app/controller/api/index.js
+2021-06-24T02:49:03.511309+00:00 app[web.1]: - /app/controller/index.js
+2021-06-24T02:49:03.511309+00:00 app[web.1]: - /app/server.js
+2021-06-24T02:49:03.511311+00:00 app[web.1]:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+2021-06-24T02:49:03.511327+00:00 app[web.1]:     at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+2021-06-24T02:49:03.511329+00:00 app[web.1]:     at Module.require (internal/modules/cjs/loader.js:974:19)
+2021-06-24T02:49:03.511329+00:00 app[web.1]:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-06-24T02:49:03.511329+00:00 app[web.1]:     at Object.<anonymous> (/app/models/index.js:1:14)
+2021-06-24T02:49:03.511330+00:00 app[web.1]:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-06-24T02:49:03.511330+00:00 app[web.1]:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-06-24T02:49:03.511331+00:00 app[web.1]:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-06-24T02:49:03.511331+00:00 app[web.1]:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-06-24T02:49:03.511331+00:00 app[web.1]:     at Module.require (internal/modules/cjs/loader.js:974:19) {
+2021-06-24T02:49:03.511332+00:00 app[web.1]:   code: 'MODULE_NOT_FOUND',
+2021-06-24T02:49:03.511332+00:00 app[web.1]:   requireStack: [
+2021-06-24T02:49:03.511333+00:00 app[web.1]:     '/app/models/index.js',
+2021-06-24T02:49:03.511333+00:00 app[web.1]:     '/app/controller/api/v1/userAuth.js',
+2021-06-24T02:49:03.511333+00:00 app[web.1]:     '/app/controller/api/v1/index.js',
+2021-06-24T02:49:03.511333+00:00 app[web.1]:     '/app/controller/api/index.js',
+2021-06-24T02:49:03.511334+00:00 app[web.1]:     '/app/controller/index.js',
+2021-06-24T02:49:03.511334+00:00 app[web.1]:     '/app/server.js'
+2021-06-24T02:49:03.511334+00:00 app[web.1]:   ]
+2021-06-24T02:49:03.511335+00:00 app[web.1]: }
+2021-06-24T02:49:03.569254+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2021-06-24T02:49:03.570555+00:00 app[web.1]: npm ERR! errno 1
+2021-06-24T02:49:03.584557+00:00 app[web.1]: npm ERR! parks-out@1.0.0 start: `node server.js`
+2021-06-24T02:49:03.585000+00:00 app[web.1]: npm ERR! Exit status 1
+2021-06-24T02:49:03.585510+00:00 app[web.1]: npm ERR! 
+2021-06-24T02:49:03.585751+00:00 app[web.1]: npm ERR! Failed at the parks-out@1.0.0 start script.
+2021-06-24T02:49:03.586131+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2021-06-24T02:49:03.593819+00:00 app[web.1]: 
+2021-06-24T02:49:03.594171+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2021-06-24T02:49:03.594412+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2021-06-24T02_49_03_587Z-debug.log
+2021-06-24T02:49:03.672800+00:00 heroku[web.1]: Process exited with status 1
+2021-06-24T02:49:03.805764+00:00 heroku[web.1]: State changed from starting to crashed
+2021-06-24T03:01:24.000000+00:00 app[api]: Build started by user sr@saibhreas.com
+2021-06-24T03:01:43.927047+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=parkout.herokuapp.com request_id=1b0f7f24-278d-4aa8-91ba-567f54c89934 fwd="174.57.106.177" dyno= connect= service= status=503 bytes= protocol=https
+2021-06-24T03:01:43.845130+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=parkout.herokuapp.com request_id=587f9d88-124a-4321-9f37-63aef95eda7c fwd="174.57.106.177" dyno= connect= service= status=503 bytes= protocol=https
+2021-06-24T03:01:44.486084+00:00 app[api]: Release v9 created by user sr@saibhreas.com
+2021-06-24T03:01:44.860610+00:00 heroku[web.1]: State changed from crashed to starting
+2021-06-24T03:01:44.486084+00:00 app[api]: Deploy b185b7c7 by user sr@saibhreas.com
+2021-06-24T03:01:45.000000+00:00 app[api]: Build succeeded
+2021-06-24T03:01:48.521354+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-06-24T03:01:52.843206+00:00 app[web.1]: 
+2021-06-24T03:01:52.843231+00:00 app[web.1]: > parks-out@1.0.0 start /app
+2021-06-24T03:01:52.843232+00:00 app[web.1]: > node server.js
+2021-06-24T03:01:52.843232+00:00 app[web.1]: 
+2021-06-24T03:01:53.542012+00:00 app[web.1]: internal/modules/cjs/loader.js:905
+2021-06-24T03:01:53.542042+00:00 app[web.1]:   throw err;
+2021-06-24T03:01:53.542042+00:00 app[web.1]:   ^
+2021-06-24T03:01:53.542043+00:00 app[web.1]: 
+2021-06-24T03:01:53.542043+00:00 app[web.1]: Error: Cannot find module './user'
+2021-06-24T03:01:53.542044+00:00 app[web.1]: Require stack:
+2021-06-24T03:01:53.542045+00:00 app[web.1]: - /app/models/index.js
+2021-06-24T03:01:53.542045+00:00 app[web.1]: - /app/controller/api/v1/userAuth.js
+2021-06-24T03:01:53.542045+00:00 app[web.1]: - /app/controller/api/v1/index.js
+2021-06-24T03:01:53.542046+00:00 app[web.1]: - /app/controller/api/index.js
+2021-06-24T03:01:53.542046+00:00 app[web.1]: - /app/controller/index.js
+2021-06-24T03:01:53.542046+00:00 app[web.1]: - /app/server.js
+2021-06-24T03:01:53.542047+00:00 app[web.1]:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+2021-06-24T03:01:53.542048+00:00 app[web.1]:     at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+2021-06-24T03:01:53.542049+00:00 app[web.1]:     at Module.require (internal/modules/cjs/loader.js:974:19)
+2021-06-24T03:01:53.542049+00:00 app[web.1]:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-06-24T03:01:53.542049+00:00 app[web.1]:     at Object.<anonymous> (/app/models/index.js:1:14)
+2021-06-24T03:01:53.542050+00:00 app[web.1]:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-06-24T03:01:53.542050+00:00 app[web.1]:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-06-24T03:01:53.542050+00:00 app[web.1]:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-06-24T03:01:53.542051+00:00 app[web.1]:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-06-24T03:01:53.542051+00:00 app[web.1]:     at Module.require (internal/modules/cjs/loader.js:974:19) {
+2021-06-24T03:01:53.542051+00:00 app[web.1]:   code: 'MODULE_NOT_FOUND',
+2021-06-24T03:01:53.542051+00:00 app[web.1]:   requireStack: [
+2021-06-24T03:01:53.542052+00:00 app[web.1]:     '/app/models/index.js',
+2021-06-24T03:01:53.542052+00:00 app[web.1]:     '/app/controller/api/v1/userAuth.js',
+2021-06-24T03:01:53.542052+00:00 app[web.1]:     '/app/controller/api/v1/index.js',
+2021-06-24T03:01:53.542053+00:00 app[web.1]:     '/app/controller/api/index.js',
+2021-06-24T03:01:53.542053+00:00 app[web.1]:     '/app/controller/index.js',
+2021-06-24T03:01:53.542053+00:00 app[web.1]:     '/app/server.js'
+2021-06-24T03:01:53.542053+00:00 app[web.1]:   ]
+2021-06-24T03:01:53.542054+00:00 app[web.1]: }
+2021-06-24T03:01:53.557531+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2021-06-24T03:01:53.558354+00:00 app[web.1]: npm ERR! errno 1
+2021-06-24T03:01:53.567224+00:00 app[web.1]: npm ERR! parks-out@1.0.0 start: `node server.js`
+2021-06-24T03:01:53.567419+00:00 app[web.1]: npm ERR! Exit status 1
+2021-06-24T03:01:53.567613+00:00 app[web.1]: npm ERR! 
+2021-06-24T03:01:53.567771+00:00 app[web.1]: npm ERR! Failed at the parks-out@1.0.0 start script.
+2021-06-24T03:01:53.567922+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2021-06-24T03:01:53.577191+00:00 app[web.1]: 
+2021-06-24T03:01:53.577454+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2021-06-24T03:01:53.577717+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2021-06-24T03_01_53_568Z-debug.log
+2021-06-24T03:01:53.669133+00:00 heroku[web.1]: Process exited with status 1
+2021-06-24T03:01:53.796327+00:00 heroku[web.1]: State changed from starting to crashed
+2021-06-24T03:01:53.800808+00:00 heroku[web.1]: State changed from crashed to starting
+2021-06-24T03:01:59.003343+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-06-24T03:02:02.602802+00:00 app[web.1]: 
+2021-06-24T03:02:02.602819+00:00 app[web.1]: > parks-out@1.0.0 start /app
+2021-06-24T03:02:02.602819+00:00 app[web.1]: > node server.js
+2021-06-24T03:02:02.602820+00:00 app[web.1]: 
+2021-06-24T03:02:03.395279+00:00 app[web.1]: internal/modules/cjs/loader.js:905
+2021-06-24T03:02:03.395316+00:00 app[web.1]:   throw err;
+2021-06-24T03:02:03.395316+00:00 app[web.1]:   ^
+2021-06-24T03:02:03.395316+00:00 app[web.1]: 
+2021-06-24T03:02:03.395317+00:00 app[web.1]: Error: Cannot find module './user'
+2021-06-24T03:02:03.395317+00:00 app[web.1]: Require stack:
+2021-06-24T03:02:03.395318+00:00 app[web.1]: - /app/models/index.js
+2021-06-24T03:02:03.395318+00:00 app[web.1]: - /app/controller/api/v1/userAuth.js
+2021-06-24T03:02:03.395319+00:00 app[web.1]: - /app/controller/api/v1/index.js
+2021-06-24T03:02:03.395319+00:00 app[web.1]: - /app/controller/api/index.js
+2021-06-24T03:02:03.395319+00:00 app[web.1]: - /app/controller/index.js
+2021-06-24T03:02:03.395320+00:00 app[web.1]: - /app/server.js
+2021-06-24T03:02:03.395320+00:00 app[web.1]:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+2021-06-24T03:02:03.395321+00:00 app[web.1]:     at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+2021-06-24T03:02:03.395322+00:00 app[web.1]:     at Module.require (internal/modules/cjs/loader.js:974:19)
+2021-06-24T03:02:03.395322+00:00 app[web.1]:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-06-24T03:02:03.395322+00:00 app[web.1]:     at Object.<anonymous> (/app/models/index.js:1:14)
+2021-06-24T03:02:03.395323+00:00 app[web.1]:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-06-24T03:02:03.395323+00:00 app[web.1]:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-06-24T03:02:03.395324+00:00 app[web.1]:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-06-24T03:02:03.395324+00:00 app[web.1]:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-06-24T03:02:03.395324+00:00 app[web.1]:     at Module.require (internal/modules/cjs/loader.js:974:19) {
+2021-06-24T03:02:03.395325+00:00 app[web.1]:   code: 'MODULE_NOT_FOUND',
+2021-06-24T03:02:03.395325+00:00 app[web.1]:   requireStack: [
+2021-06-24T03:02:03.395325+00:00 app[web.1]:     '/app/models/index.js',
+2021-06-24T03:02:03.395325+00:00 app[web.1]:     '/app/controller/api/v1/userAuth.js',
+2021-06-24T03:02:03.395326+00:00 app[web.1]:     '/app/controller/api/v1/index.js',
+2021-06-24T03:02:03.395326+00:00 app[web.1]:     '/app/controller/api/index.js',
+2021-06-24T03:02:03.395326+00:00 app[web.1]:     '/app/controller/index.js',
+2021-06-24T03:02:03.395327+00:00 app[web.1]:     '/app/server.js'
+2021-06-24T03:02:03.395327+00:00 app[web.1]:   ]
+2021-06-24T03:02:03.395327+00:00 app[web.1]: }
+2021-06-24T03:02:03.412138+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2021-06-24T03:02:03.412709+00:00 app[web.1]: npm ERR! errno 1
+2021-06-24T03:02:03.423052+00:00 app[web.1]: npm ERR! parks-out@1.0.0 start: `node server.js`
+2021-06-24T03:02:03.423291+00:00 app[web.1]: npm ERR! Exit status 1
+2021-06-24T03:02:03.423487+00:00 app[web.1]: npm ERR! 
+2021-06-24T03:02:03.423616+00:00 app[web.1]: npm ERR! Failed at the parks-out@1.0.0 start script.
+2021-06-24T03:02:03.423742+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2021-06-24T03:02:03.434356+00:00 app[web.1]: 
+2021-06-24T03:02:03.434693+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2021-06-24T03:02:03.434884+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2021-06-24T03_02_03_424Z-debug.log
+2021-06-24T03:02:03.507211+00:00 heroku[web.1]: Process exited with status 1
+2021-06-24T03:02:03.679330+00:00 heroku[web.1]: State changed from starting to crashed
