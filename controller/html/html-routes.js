@@ -37,7 +37,7 @@ router.get("/where2go", isAuthenticated, (req, res) => {
 // })
 
 router.get("/", (req, res) => {
-  console.log("get/ called");
+  console.log("GET /");
   // If the user already has an account send them to the where2go page
   if (req.user) {
     res.redirect("/where2go");
