@@ -12,7 +12,7 @@ router.get("/signup", (req, res) => {
     res.redirect("/where2go");
   }
   // res.sendFile(path.join(__dirname, "../../public/signup.html"));
-  res.sendFile(path.join(__dirname, "../public/signup.html"));
+  res.sendFile(path.join(__dirname, "../public/signUp.html"));
 });
 
 router.get("/login", (req, res) => {
